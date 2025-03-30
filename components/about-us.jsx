@@ -47,7 +47,7 @@ function AboutSection() {
                 className="rounded-lg"
               />
               {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#a8dadc] -z-10 rounded-bl-lg"></div>
+              <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#a8dadc] -z-10 rounded-bl-lg"></div>
             </div>
           </div>
         </div>
