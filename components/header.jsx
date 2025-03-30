@@ -17,7 +17,7 @@ function Header() {
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black/50 bg-opacity-50 flex items-center justify-center text-center">
         <div className="text-white px-6">
-          <h1 className="text-4xl md:text-8xl font-bold mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 leading-tight">
             مرحبًا بكم في أفضل
             <br />
             عيادات العلاج الطبيعي
