@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] })
+const cairo = Cairo({ subsets: ["latin"] })
 
 export const metadata = {
   title: "كايروكايند - عيادة العلاج اليدوي",
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${cairo.className} antialiased`}
       >
         {children}
       </body>
