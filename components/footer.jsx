@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-6">
               <div className="relative h-12 w-12">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
+                  src="/images/logo/1.png"
                   alt="كايروكايند"
                   width={48}
                   height={48}

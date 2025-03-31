@@ -17,13 +17,13 @@ function TopBar() {
             <span className="text-sm">اتصل للمساعدة: ٧٨٩٠-٤٥٦ (٨٠٠+)</span>
           </div>
 
-          <Button
+          <Link
+            href="#contact"
             size="sm"
-            variant="link"
             className="text-white hover:text-blue-400"
           >
             احجز موعداً
-          </Button>
+          </Link>
 
           <div className="flex items-center gap-3">
             <Link href="#" className="text-white hover:text-blue-400">

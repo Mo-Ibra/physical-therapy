@@ -19,7 +19,7 @@ function Navbar() {
               <Link href="/" className="flex items-center gap-2">
                 <div className="relative h-12 w-12">
                   <Image
-                    src="/placeholder.svg?height=48&width=48"
+                    src="/images/logo/1.png"
                     alt="كايروكايند"
                     width={48}
                     height={48}
@@ -43,34 +43,28 @@ function Navbar() {
                 الرئيسية
               </Link>
               <Link
-                href="/about"
+                href="#about"
                 className="text-gray-700 font-medium hover:text-red-500"
               >
                 من نحن
               </Link>
               <Link
-                href="/services"
+                href="#services"
                 className="text-gray-700 font-medium hover:text-red-500"
               >
                 الخدمات
               </Link>
               <Link
-                href="/patients"
-                className="text-gray-700 font-medium hover:text-red-500"
-              >
-                المرضى
-              </Link>
-              <Link
-                href="/blog"
+                href="#blog"
                 className="text-gray-700 font-medium hover:text-red-500"
               >
                 المدونة
               </Link>
               <Link
-                href="/contact"
+                href="#contact"
                 className="text-gray-700 font-medium hover:text-red-500"
               >
-                اتصل بنا
+                احجز موعد 
               </Link>
               <Button
                 size="icon"

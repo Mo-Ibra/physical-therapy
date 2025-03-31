@@ -93,7 +93,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-800">
+    <section className="py-16 bg-gray-100 dark:bg-gray-800" id="contact">
       <div className="container mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
