@@ -69,6 +69,8 @@ function ContactForm() {
 
     setIsSubmitting(true);
 
+    console.log(formData);
+
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -82,7 +84,7 @@ function ContactForm() {
         toast("تم حجز الموعد بنجاح ، سوف نتواصل معك قريبًا.");
         setFormData({ name: "", phone: "", date: "", email: "", message: "" });
       } else {
-        toast("Error");
+        toast("حدث خطأ أثناء إرسال النموذج. يرجى المحاولة مرة أخرى.");
       }
       console.log("Done");
     } catch (error) {

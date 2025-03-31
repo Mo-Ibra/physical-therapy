@@ -29,7 +29,7 @@ const services = [
   {
     id: 5,
     title: "العلاج المهني",
-    image: "/images/services/1.jpg",
+    image: "/images/services/2.jpg",
   },
   {
     id: 6,
@@ -93,6 +93,7 @@ export default function ServicesSection() {
                   fill
                   style={{ objectFit: "cover" }}
                   className="transition-transform duration-500 group-hover:scale-105"
+                  sizes="100%"
                 />
               </div>
               <div className="absolute bottom-0 w-full bg-white bg-opacity-90 p-4 text-center">

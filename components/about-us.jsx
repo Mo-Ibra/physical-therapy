@@ -45,6 +45,7 @@ function AboutSection() {
                 fill
                 style={{ objectFit: "cover" }}
                 className="rounded-lg"
+                sizes="100%"
               />
               {/* Decorative element */}
               <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#a8dadc] -z-10 rounded-bl-lg"></div>

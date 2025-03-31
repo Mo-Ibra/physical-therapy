@@ -12,6 +12,8 @@ function WhyChooseUsSection() {
             src="/images/3.jpg"
             alt="علاج الركبة"
             fill
+            sizes="100%"
+            className="w-full h-full"
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>

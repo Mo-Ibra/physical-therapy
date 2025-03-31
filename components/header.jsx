@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
   return (
     <section className="relative w-full h-[825px] overflow-hidden" id="header">
-
       <div className="w-full h-full">
         <Image
           src="/images/header/1.jpg"
@@ -25,9 +25,11 @@ function Header() {
           <p className="text-lg md:text-xl mb-6">
             نحن هنا لمساعدتك على التعافي واستعادة صحتك بأفضل الطرق.
           </p>
-          <button className="bg-red-800 hover:bg-red-600 duration-300 cursor-pointer text-white py-3 px-6 rounded-lg text-lg">
-            احجز موعدًا الآن
-          </button>
+          <Link href={"#contact"}>
+            <button className="bg-red-800 hover:bg-red-600 duration-300 cursor-pointer text-white py-3 px-6 rounded-lg text-lg">
+              احجز موعدًا الآن
+            </button>
+          </Link>
         </div>
       </div>
     </section>
