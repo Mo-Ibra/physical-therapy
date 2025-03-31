@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navbarData } from "@/data/navbar-data";
 
@@ -62,7 +62,9 @@ function Navbar() {
                   />
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-[#001233]">كايروكايند</h1>
+                  <h1 className="text-xl font-bold text-[#001233]">
+                    كايروكايند
+                  </h1>
                   <p className="text-xs text-gray-600">عيادة العلاج اليدوي</p>
                 </div>
               </Link>
@@ -75,21 +77,31 @@ function Navbar() {
                   key={item.id}
                   href={`#${item.id}`}
                   className={`font-medium transition-all ${
-                    activeSection === item.id ? "text-red-500" : "text-gray-700 hover:text-red-500"
+                    activeSection === item.id
+                      ? "text-red-500"
+                      : "text-gray-700 hover:text-red-500"
                   }`}
                 >
                   {item.label}
                 </Link>
               ))}
 
-              <Button size="icon" className="rounded-full bg-red-500 hover:bg-red-500/90">
-                <Menu size={20} />
-              </Button>
+              <Link href="#contact">
+                <Button
+                  size="icon"
+                  className="rounded-full bg-red-500 hover:bg-red-500/90 cursor-pointer"
+                >
+                  <Phone size={20} />
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="flex md:hidden items-center gap-4">
-              <button className="text-gray-700" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <button
+                className="text-gray-700"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
             </div>
@@ -106,7 +118,9 @@ function Navbar() {
                     key={item.id}
                     href={`#${item.id}`}
                     className={`py-2 border-b font-medium transition-all ${
-                      activeSection === item.id ? "text-red-500" : "text-gray-700 hover:text-red-500"
+                      activeSection === item.id
+                        ? "text-red-500"
+                        : "text-gray-700 hover:text-red-500"
                     }`}
                   >
                     {item.label}
