@@ -70,27 +70,23 @@ function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // const response = await fetch("/api/sendEmail", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(formData),
-      // });
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-      // if (response.ok) {
-      //   toast("Message sent successfully!");
-      //   setFormData({ name: "", phone: "", date: "", email: "", message: "" });
-      // } else {
-      //   toast("Error");
-      // }
+      if (response.ok) {
+        toast("تم حجز الموعد بنجاح ، سوف نتواصل معك قريبًا.");
+        setFormData({ name: "", phone: "", date: "", email: "", message: "" });
+      } else {
+        toast("Error");
+      }
       console.log("Done");
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "An unexpected error occurred.",
-        variant: "destructive",
-      });
+      toast("حدث خطأ أثناء إرسال النموذج. يرجى المحاولة مرة أخرى.");
     } finally {
       setIsSubmitting(false);
     }
@@ -202,7 +198,6 @@ function ContactForm() {
                 placeholder="اخبرنا عن مشكلتك"
                 value={formData.message}
                 onChange={handleChange}
-                required
                 className={`min-h-[120px] resize-none ${
                   errors.message ? "border-red-500" : ""
                 }`}
