@@ -36,6 +36,8 @@ export async function POST(request) {
         <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 8px; border: 1px solid #ddd;">
           <h2 style="color: #333;">📩 New Contact Form Submission</h2>
           <p><strong>الاسم:</strong> ${name}</p>
+          <p><strong>الموبيل:</strong> ${phone}</p>
+          <p><strong>موعد الحجز:</strong> ${data}</p>
           <p><strong>الايميل:</strong> <a href="mailto:${email}" style="color: #007bff;">${email}</a></p>
           <p><strong>الرسالة:</strong></p>
           <blockquote style="background: #eee; padding: 10px; border-left: 5px solid #007bff; margin: 10px 0;">
