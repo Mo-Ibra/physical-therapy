@@ -6,6 +6,7 @@ import WhyChooseUsSection from "@/components/why-us";
 import ServicesSection from "@/components/services";
 import ContactForm from "@/components/contact-form";
 import Footer from "@/components/footer";
+import ToTopButton from "@/components/to-up-button";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ServicesSection />
       <ContactForm />
       <Footer />
+      <ToTopButton />
     </>
   );
 }

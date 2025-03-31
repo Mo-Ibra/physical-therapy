@@ -1,7 +1,6 @@
 import { Phone } from "lucide-react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
-import { Button } from "./ui/button";
 
 function TopBar() {
   return (
