@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { navbarData } from "@/data/navbar-data";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,13 +70,7 @@ function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6">
-              {[
-                { id: "header", label: "الرئيسية" },
-                { id: "about", label: "من نحن" },
-                { id: "services", label: "الخدمات" },
-                { id: "blog", label: "المدونة" },
-                { id: "contact", label: "احجز موعد" },
-              ].map((item) => (
+              {navbarData.map((item) => (
                 <Link
                   key={item.id}
                   href={`#${item.id}`}
@@ -106,13 +101,7 @@ function Navbar() {
           <div className="md:hidden bg-white border-b mt-4">
             <div className="container mx-auto px-4 md:px-8">
               <div className="py-4 flex flex-col gap-4">
-                {[
-                  { id: "header", label: "الرئيسية" },
-                  { id: "about", label: "من نحن" },
-                  { id: "services", label: "الخدمات" },
-                  { id: "blog", label: "المدونة" },
-                  { id: "contact", label: "احجز موعد" },
-                ].map((item) => (
+                {navbarData.map((item) => (
                   <Link
                     key={item.id}
                     href={`#${item.id}`}
