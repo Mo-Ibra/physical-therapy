@@ -5,6 +5,7 @@ import AboutSection from "@/components/about-us";
 import WhyChooseUsSection from "@/components/why-us";
 import ServicesSection from "@/components/services";
 import ContactForm from "@/components/contact-form";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyChooseUsSection />
       <ServicesSection />
       <ContactForm />
+      <Footer />
     </>
   );
 }
