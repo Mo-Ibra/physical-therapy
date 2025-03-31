@@ -31,7 +31,7 @@ function AboutSection() {
               للأشخاص من جميع الأعمار، ومساعدة المرضى على التعامل مع حالتهم.
             </p>
 
-            <Button className="bg-[#e63946] hover:bg-[#e63946]/90 text-white rounded-full px-8 py-3">
+            <Button className="bg-red-600 hover:bg-red-600/90 text-white rounded-full px-8 py-3">
               عرض الخدمات
             </Button>
           </div>

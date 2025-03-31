@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import AboutSection from "@/components/about-us";
 import WhyChooseUsSection from "@/components/why-us";
 import ServicesSection from "@/components/services";
+import ContactForm from "@/components/contact-form";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <WhyChooseUsSection />
       <ServicesSection />
+      <ContactForm />
     </>
   );
 }
