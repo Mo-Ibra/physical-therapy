@@ -61,7 +61,7 @@ export default function ServicesSection() {
   const visibleServices = services.slice(startIndex, startIndex + itemsToShow);
 
   return (
-    <div className="py-16" id="services">
+    <section className="py-16" id="services">
       <div className="container mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -120,6 +120,6 @@ export default function ServicesSection() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

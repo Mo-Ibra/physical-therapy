@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function WhyChooseUsSection() {
   return (
-    <div className="py-16">
+    <section className="py-16" id="why-choose-us">
 
       <div className="grid grid-cols-1 lg:grid-cols-2">
 
@@ -52,7 +52,7 @@ function WhyChooseUsSection() {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <div className="relative w-full h-[825px] overflow-hidden">
+    <section className="relative w-full h-[825px] overflow-hidden" id="header">
 
       <div className="w-full h-full">
         <Image
@@ -30,7 +30,7 @@ function Header() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
